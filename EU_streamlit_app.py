@@ -128,41 +128,6 @@ def calculate_km_function(body_style_group, mileage):
 
 
 def main():
-    # Moving Happy New Year banner
-    st.markdown("""
-        <style>
-        @keyframes scroll {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
-        @keyframes colorChange {
-            0% { color: #ffffff; }
-            25% { color: #ffff00; }
-            50% { color: #00ffff; }
-            75% { color: #00ff00; }
-            100% { color: #ffffff; }
-        }
-        .news-banner {
-            background: linear-gradient(90deg, #1f77b4, #1565c0);
-            padding: 8px 0;
-            overflow: hidden;
-            white-space: nowrap;
-            margin-bottom: 20px;
-        }
-        .news-banner-content {
-            display: inline-block;
-            animation: scroll 25s linear infinite, colorChange 1.5s ease-in-out infinite;
-            font-size: 16px;
-            font-weight: 500;
-        }
-        </style>
-        <div class="news-banner">
-            <div class="news-banner-content">
-                🎉 Happy New Year! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📢 EU Wholesale Engine Vehicle Pricing Tool is now live!
-            </div>
-        </div>
-    """, unsafe_allow_html=True)
-
     st.markdown("<h1 style='text-align: center;'>EU Wholesale Engine Vehicle Pricing Tool</h1>", unsafe_allow_html=True)
 
     # Add custom CSS to reduce metric font sizes and style sections
