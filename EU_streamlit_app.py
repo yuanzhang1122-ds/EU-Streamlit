@@ -437,7 +437,7 @@ def main():
 
         # Row 1: Forecast Price (full width)
         st.metric(
-            "Base Price",
+            "Typical Price",
             f"€{int(vehicle_data['raw_fst']):,}",
             help="Typical mileage, Grade 1, Base Region"
         )
@@ -697,7 +697,7 @@ def main():
 
         with col1:
             st.metric(
-                "Base Price",
+                "Typical Price",
                 f"€{int(raw_fst):,}",
                 help="Typical mileage, Grade 1, Base Region"
             )
@@ -734,7 +734,7 @@ def main():
             st.metric(
                 "Price Difference",
                 f"{price_diff_pct:+.2f}%",
-                help="Percentage change from base price"
+                help="Percentage change from typical price"
             )
 
         st.markdown("---")
@@ -754,7 +754,7 @@ def main():
         import plotly.graph_objects as go
 
         # Data for waterfall chart
-        x_labels = ["Base Price", "KM<br>Adjustment", "Condition<br>Adjustment", "Region<br>Adjustment", "Final Price"]
+        x_labels = ["Typical Price", "KM<br>Adjustment", "Condition<br>Adjustment", "Region<br>Adjustment", "Final Price"]
 
         km_delta = (price_after_km - raw_fst)
         condition_delta = (price_after_condition - price_after_km)
@@ -892,7 +892,7 @@ def main():
         if info_option == "Detailed Pricing Adjustments Breakdown":
             # Starting Point
             st.write("**📍 Starting Point:**")
-            st.write(f"- Base Forecast Price: €{int(raw_fst):,}")
+            st.write(f"- Typical Forecast Price: €{int(raw_fst):,}")
             st.write(f"- Typical Mileage: {typical_km:,.0f} km")
             st.write("- Typical Condition: Grade 1 - Excellent")
             st.write("- Typical Region: Base Region")
