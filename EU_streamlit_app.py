@@ -892,7 +892,7 @@ def main():
         if info_option == "Detailed Pricing Adjustments Breakdown":
             # Starting Point
             st.write("**📍 Starting Point:**")
-            st.write(f"- Typical Forecast Price: €{int(raw_fst):,}")
+            st.write(f"- Typical Price: €{int(raw_fst):,}")
             st.write(f"- Typical Mileage: {typical_km:,.0f} km")
             st.write("- Typical Condition: Grade 1 - Excellent")
             st.write("- Typical Region: Base Region")
